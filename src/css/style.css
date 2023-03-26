@@ -1,0 +1,31 @@
+form, #result{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+form>div>label>input{
+    margin: 1%;
+}
+
+div[id="result"]>input{
+    background-color: rgb(245, 122, 163);
+}
+div[id="result"]>div{
+    background-color: aquamarine;
+}
+div[id="result"]>h1{
+    background-color: antiquewhite;
+}
+div[id="result"]>a{
+    background-color: rgb(224, 100, 100);
+}
+div[id="result"]>form{
+    background-color: goldenrod;
+}
+#result{
+    margin-top: 50px;
+    border: 1px solid;
+}
+#result>p{
+    margin-left: 10px;
+}

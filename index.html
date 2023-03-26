@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <title>Document</title>
+</head>
+<body id="ma">
+    <form action="" style="background-color: rgb(162, 243, 198);">
+        <label for="elements">Выберите элемент</label>
+        <select id="elements">
+            <option selected>div</option>
+            <option>a</option>
+            <option>form</option>
+            <option>h1</option>
+            <option>input</option>
+          </select>
+          <div id="general">
+            <label for="class">class<input type="text" id="class" data-value="class"></label>
+            <label for="id">id<input type="text" id="id" data-value="id"></label>
+          </div>
+          <div id="div">
+            <label for="txtDiv">txt<input type="text" id="txtDiv" data-value="txt"></label>
+          </div>
+          <div id="h1" hidden>
+            <label for="txth1">txt<input type="text" id="txth1" data-value="txt"></label>
+          </div>
+          <div id="a" hidden>
+            <label for="href">href<input type="text" id="href" data-value="href"></label>
+            <label for="target">target</label>
+            <select id="target" data-value="target">
+                <option selected>_self</option>
+                <option>_blank</option>
+                <option>_parent</option>
+                <option>_top</option>
+              </select>
+              <label for="txtA">txt<input type="text" id="txtA" data-value="txt"></label>
+          </div>
+          <div id="form" hidden>
+            <label for="method">method</label>
+            <select id="method" data-value="method">
+                <option selected>get</option>
+                <option>post</option>
+            </select>
+            <label for="action">action<input type="text" id="action" data-value="action"></label>
+            <label for="txtForm">txt<input type="text" id="txtForm" data-value="txt"></label>
+          </div>
+          <div id="input" hidden>
+            <label for="type">type</label>
+            <select id="type" data-value="type">
+                <option>button</option>
+                <option>checkbox</option>
+                <option>file</option>
+                <option>hidden</option>
+                <option>image</option>
+                <option>password</option>
+                <option>radio</option>
+                <option>reset</option>
+                <option>submit</option>
+                <option>text</option>
+            </select>
+            <label for="name">name<input type="text" id="name" data-value="name"></label>
+            <label for="value">value<input type="text" id="value" data-value="value"></label>
+          </div>
+          <button type="button">Create</button>
+    </form>
+    <div id="result">
+      <p>Результат</p> 
+    </div>
+</body>
+<script src="dist/script.js"></script>
+</html>
